@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roster Mata Pelajaran</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="top-navbar">
+
+    <div class="nav-container">
+        <div class="nav-logo">
+                <a href="#">
+                    <img src="assets/logo.png" alt="">
+                </a>
+            <div class="txt">
+                <p>KELAS X — KM¹</p>
+            </div>
+        </div>
+    </div>
+        
+    </nav>
+        
+
+    <div class="container">
+        <header>
+            <h1>Roster Mata Pelajaran</h1>
+            <p>Kelas X — KM¹ (Semester Ganjil)</p>
+        </header>
+
+        <!-- Navigasi Hari -->
+        <nav class="day-navigation">
+            <button class="day-btn active" onclick="showSchedule('senin', this)">Senin</button>
+            <button class="day-btn" onclick="showSchedule('selasa', this)">Selasa</button>
+            <button class="day-btn" onclick="showSchedule('rabu', this)">Rabu</button>
+            <button class="day-btn" onclick="showSchedule('kamis', this)">Kamis</button>
+            <button class="day-btn" onclick="showSchedule('jumat', this)">Jum'at</button>
+        </nav>
+
+        <!-- Tabel Roster -->
+        <div class="table-card">
+            <h2 id="current-day-title">Jadwal Hari Senin</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-no">NO</th>
+                            <th class="col-jam">JAM</th>
+                            <th class="col-guru">NAMA GURU</th>
+                            <th class="col-mapel">MAPEL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="roster-body">
+                        <!-- Data dari JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+               <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="dev-title">PENGEMBANG SITE</p>
+                    <p class="dev-name">Developer: <span>Yosimora</span></p>
+                </div>
+                <div class="footer-contact">
+                    <p class="contact-title">KONTAK & MASUKAN</p>
+                    <a href="https://wa.me/6283899545906" target="_blank" class="whatsapp-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z"/>
+                        </svg>
+                        +62 838-9954-5906
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kelas X-KM1. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

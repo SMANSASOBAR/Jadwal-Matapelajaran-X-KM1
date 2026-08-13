@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --accent-bg: #f1f5f9;
+    --break-bg: #fffbeb;
+    --break-text: #b45309;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'sora-reg', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styling Navbar Atas */
+.top-navbar {
+    width: 100%;
+    background-color: rgba(10, 11, 13, 0.7);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Membuat navbar tetap di atas saat di-scroll */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Kontainer utama di dalam navbar */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Logo di kiri, Ikon di kanan */
+    align-items: center;
+    height: 60px; /* Tinggi navbar */
+}
+
+/* Bagian Logo - Bersebelahan & Sejajar */
+.nav-logo {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+    gap: 12px;           /* Memberi jarak antara gambar logo dan teks */
+}
+
+.nav-logo img {
+    height: 50px;        /* Sesuaikan ukuran logo agar pas di navbar */
+    width: auto;
+    display: block;
+}
+
+.nav-logo .txt p {
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'imp';
+    font-size: 1.4rem;  /* Ukuran font agar tidak merusak tata letak */
+    margin: 0;
+    white-space: nowrap; /* Mencegah teks turun ke baris baru */
+    -webkit-text-stroke: 0.2px #000;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Header Lebih Ringkas */
+header {
+    padding-top: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'imp';
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Navigasi Tombol Ringkas */
+.day-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.day-btn {
+    background-color: var(--card-bg);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.day-btn.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
+/* Card Tabel */
+.table-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 16px 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.table-card h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--accent-bg);
+    padding-bottom: 8px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    font-family: 'sora-bol';
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Pengaturan Lebar Kolom yang Presisi */
+th.col-no { width: 10%; text-align: center; }
+th.col-jam { width: 28%; }
+th.col-guru { width: 32%; }
+th.col-mapel { width: 30%; }
+
+th {
+    background-color: var(--accent-bg);
+    color: var(--text-muted);
+    font-weight: 600;
+    padding: 10px 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+td {
+    padding: 10px 8px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.82rem;
+    vertical-align: middle;
+}
+
+td.txt-center {
+    text-align: center;
+}
+
+/* Mencegah jam terpotong jadi 3 baris */
+td.jam-cell {
+    white-space: nowrap;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Baris Istirahat */
+.break-row {
+    background-color: var(--break-bg) !important;
+}
+
+.break-row td {
+    font-weight: 700;
+    color: var(--break-text);
+}
+
+/* STYLING FOOTER MODERN */
+.site-footer {
+    margin-top: 40px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dev-title, .contact-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+}
+
+.dev-name {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.dev-name span {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Tombol Kontak WhatsApp */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #16a34a; /* Warna hijau WhatsApp */
+    background-color: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+    border-color: #16a34a;
+}
+
+/* Hak Cipta Bawah */
+.footer-bottom {
+    padding-top: 12px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Penyesuaian Responsif Layar Kecil (HP) */
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* Penyesuaian khusus layar HP sangat kecil */
+@media (max-width: 480px) {
+    body {
+        padding: 12px 6px;
+    }
+
+    .table-card {
+        padding: 12px 8px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+        font-size: 0.60rem;
+    }
+
+    td.jam-cell {
+        font-size: 0.72rem;
+    }
+}
+
+
+
+@font-face {
+  font-family: 'sora-reg';
+  src: url('../font/Sora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sora-bol';
+  src: url('../font/Sora-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'imp';
+  src: url('../font/impact.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'pop-reg';
+  src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
