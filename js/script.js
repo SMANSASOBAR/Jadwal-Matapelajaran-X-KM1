@@ -23,8 +23,8 @@ const dataRoster = {
     selasa: [
         { no: 1, jam: "07:30 - 08:10", guru: "Drs. JANNES PARDEDE, MM.", mapel: "Informatika" },
         { no: 2, jam: "08:10 - 08:50", guru: "Drs. JANNES PARDEDE, MM.", mapel: "Informatika" },
-        { no: 3, jam: "08:50 - 09:30", guru: "ARYATI POHAN, S.Pd.", mapel: "Kimia" },
-        { no: 4, jam: "09:30 - 10:10", guru: "RINALDI SIMANUNGKALIT, S.Pd.", mapel: "Matematika" },
+        { no: 3, jam: "08:50 - 09:30", guru: "RINALDI SIMANUNGKALIT, S.Pd.", mapel: "Matematika" },
+        { no: 4, jam: "09:30 - 10:10", guru: "ARYATI POHAN, S.Pd.", mapel: "Kimia" },
         { no: "-", jam: "10:10 - 10:25", guru: "-", mapel: "ISTIRAHAT 1" },
         { no: 5, jam: "10:25 - 11:05", guru: "MITRIADI MANALU, S.Pd.", mapel: "Seni Musik" },
         { no: 6, jam: "11:05 - 11:45", guru: "MITRIADI MANALU, S.Pd.", mapel: "Seni Musik" },
