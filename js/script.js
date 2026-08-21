@@ -69,7 +69,7 @@ const dataRoster = {
         { no: "-", jam: "10:00 - 10:15", guru: "-", mapel: "ISTIRAHAT" },
         { no: 4, jam: "10:15 - 10:55", guru: "KARPINA SIMAMORA, S.Pd.", mapel: "Sejarah" },
         { no: 5, jam: "10:55 - 11:35", guru: "KARPINA SIMAMORA, S.Pd.", mapel: "Sejarah" },
-        { no: "-", jam: "11:35 - 12:25", guru: "Ibadah", mapel: "-" }
+        { no: "-", jam: "11:35 - 13:10", guru: "Ibadah", mapel: "-" }
     ]
 };
 
