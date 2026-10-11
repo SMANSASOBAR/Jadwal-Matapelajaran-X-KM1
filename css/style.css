@@ -240,13 +240,13 @@ tbody tr:last-child td {
 }
 
 .dev-name {
+    font-family: 'urb';
     font-size: 0.9rem;
     color: var(--text-main);
     font-weight: 500;
 }
 
 .dev-name span {
-    font-family: 'urb';
     font-weight: 500;
     color: var(--primary-color);
 }
