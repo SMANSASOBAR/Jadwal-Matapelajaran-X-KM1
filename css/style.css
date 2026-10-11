@@ -246,7 +246,8 @@ tbody tr:last-child td {
 }
 
 .dev-name span {
-    font-weight: 700;
+    font-family: 'urb';
+    font-weight: 500;
     color: var(--primary-color);
 }
 
@@ -329,4 +330,9 @@ tbody tr:last-child td {
 @font-face {
   font-family: 'pop-reg';
   src: url('../font/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'urb';
+  src: url('../font/UrbanJungleDEMO.otf') format('truetype');
 }
