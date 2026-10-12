@@ -247,6 +247,7 @@ tbody tr:last-child td {
 }
 
 .dev-name span {
+    font-family: 'urb';
     font-weight: 500;
     color: var(--primary-color);
 }
