@@ -58,7 +58,7 @@ const dataRoster = {
         { no: 6, jam: "11:05 - 11:45", guru: "ELPIANNA SITUMEANG, S.Pd.", mapel: "Bahasa Indonesia" },
         { no: 7, jam: "11:45 - 12:25", guru: "ELPIANNA SITUMEANG, S.Pd.", mapel: "Bahasa Indonesia" },
         { no: "-", jam: "12:25 - 13:25", guru: "-", mapel: "ISTIRAHAT 2" },
-        { no: 8, jam: "13:25 - 14:15", guru: "LISTA V PADARIBU, S.Pd.", mapel: "BK" },
+        { no: 8, jam: "13:25 - 14:15", guru: "LISTA V PASARIBU, S.Pd.", mapel: "BK" },
         { no: 9, jam: "14:15 - 14:55", guru: "SALMIAH, S.Pd. M.Pd.", mapel: "PPKn" },
         { no: 10, jam: "14:55 - 15:35", guru: "SALMIAH, S.Pd. M.Pd.", mapel: "PPKn" }
     ],
